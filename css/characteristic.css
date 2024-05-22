@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+/* Main Content */
+.header-content {
+    display: flex;
+    text-align: center;
+    margin-top: 0;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content-title {
+    font-size: 40px;
+    margin-top: 5%;
+    color: #17baaa;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.photo-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+.price-color {
+    font-size: 24px;
+    color: #17baaa;
+}
+
+.buttom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header-content-btn {
+    background: #17baaa;
+    color: #fff;
+    font-size: .875rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .25s ease;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-content-btn:hover {
+    background-color: #129185;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #17baaa;
+    color: white;
+    font-size: 24px;
+}
+
+td {
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.char {
+    margin: 0;
+    font-size: 20px;
+    color: #17baaa;
+}
+
+p {
+    margin: 10px 0 0 0;
+}
+
+/* Media Section */
+.media-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+audio {
+    display: block;
+    margin: 10px auto;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 960px) {
+    .header-content {
+        height: 100px;
+        text-align: center;
+    }
+
+    .header-content-title {
+        font-size: 26px;
+    }
+
+    .photo-phone {
+        width: 90%;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .header-content-btn {
+        padding: 10px;
+    }
+
+    .video {
+        width: 315px;
+        height: 177px;
+    }
+}

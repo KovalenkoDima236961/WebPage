@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.header-content-title {
+    font-size: 50px;
+    color: #17baaa;
+    margin-bottom: 20px;
+}
+
+.header-content-subtitle {
+    font-size: 24px;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.buttom {
+    display: flex;
+    gap: 20px;
+}
+
+.header-content-btn {
+    background: #007aff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 22px;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.header-content-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 60px 20px;
+    background-color: #000;
+}
+
+.photo-phone, .photo-phone-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.photo {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.price, .price-2 {
+    margin-top: 20px;
+}
+
+.price-color, .price-color-2 {
+    color: #17baaa;
+    font-size: 24px;
+}
+
+.buttom-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.header-content-btn-2 {
+    background: #ff5722;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 22px;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.header-content-btn-2:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #333;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th h1, th h2, th h3 {
+    margin: 0;
+    color: #17baaa;
+}
+
+th p, td p {
+    color: #aaa;
+}
+/* Responsive Styles */
+@media screen and (max-width: 960px) {
+    .header-content-title {
+        font-size: 35px;
+    }
+
+    .header-content-subtitle {
+        font-size: 20px;
+    }
+
+    .photo {
+        max-height: 100%;
+        margin-top: 0;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .photo-phone, .photo-phone-2 {
+        width: 90%;
+    }
+}

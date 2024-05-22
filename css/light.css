@@ -1,0 +1,26 @@
+/* Light theme */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    background-color: #f8f8f8;
+}
+
+.header-content-btn, .header-content-btn-2, .theme-toggle {
+    background: #007aff;
+    color: #fff;
+}
+
+.header-content-btn:hover, .header-content-btn-2:hover, .theme-toggle:hover {
+    background-color: #005bb5;
+}
+
+table {
+    background-color: #fff;
+}
+
+th, td {
+    border-color: #ccc;
+}

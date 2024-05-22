@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.header-content-title {
+    font-size: 50px;
+    color: #17baaa;
+    margin-bottom: 20px;
+}
+
+.header-content-subtitle {
+    font-size: 24px;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.buttom {
+    display: flex;
+    gap: 20px;
+}
+
+.header-content-btn {
+    background: #007aff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 22px;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.header-content-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.photo-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.photo {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.price-color {
+    color: #fff;
+    font-size: 24px;
+}
+
+.buttom {
+    display: flex;
+    gap: 20px;
+}
+
+.header-content-btn {
+    background: #007aff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 22px;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.header-content-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.video {
+    width: 80%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+/* Responsive Styles */
+@media screen and (max-width: 960px) {
+    .header-content-title {
+        font-size: 35px;
+    }
+
+    .header-content-subtitle {
+        font-size: 20px;
+    }
+
+    .photo {
+        max-height: 100%;
+        margin-top: 0;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .photo-phone {
+        width: 90%;
+    }
+
+    .video {
+        width: 100%;
+        height: 300px;
+    }
+}

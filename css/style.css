@@ -1,0 +1,130 @@
+/* Main Content */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.header-content-title {
+    font-size: 50px;
+    color: #17baaa;
+    margin-bottom: 20px;
+}
+
+.header-content-subtitle {
+    font-size: 24px;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.buttom {
+    display: flex;
+    gap: 20px;
+}
+
+.header-content-btn {
+    background: #007aff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 22px;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.header-content-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Parallax Section */
+.parallax {
+    position: relative;
+    background: url('/img/Photo-4.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px; /* Adjust height as needed */
+    /*margin: 20px 0;*/
+    background-attachment: fixed; /* Fixed background for parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Ensure text color is white for visibility */
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+}
+
+.parallax-content {
+    position: relative; /* Ensure the content is above the overlay */
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Information Section */
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.text {
+    color: #aaa;
+    font-size: 20px;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 20px 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 960px) {
+    .header-content-title {
+        font-size: 35px;
+    }
+
+    .header-content-subtitle {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .information {
+        width: 90%;
+    }
+
+    .photo {
+        max-height: 100%;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,26 @@
+/* Dark theme */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+}
+
+.header-content-btn, .header-content-btn-2, .theme-toggle {
+    background: #ff5722;
+    color: #fff;
+}
+
+.header-content-btn:hover, .header-content-btn-2:hover, .theme-toggle:hover {
+    background-color: #e64a19;
+}
+
+table {
+    background-color: #333;
+}
+
+th, td {
+    border-color: #444;
+}
