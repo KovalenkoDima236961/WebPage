@@ -7,7 +7,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 100px 20px;
-    background-color: #000;
+    background-color: #ae2121;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
@@ -49,12 +49,12 @@ body {
     transform: scale(1.05);
 }
 
-.section {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px 20px;
-    background-color: #000;
+    background-color: #c32828;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;

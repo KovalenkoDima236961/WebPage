@@ -25,7 +25,7 @@ body {
     padding: 20px;
 }
 
-.photo-phone {
+.photo-phone, .photo-phone-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,13 +47,13 @@ body {
     color: #17baaa;
 }
 
-.buttom {
+.buttom, .buttom-2 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.header-content-btn {
+.header-content-btn, .header-content-btn-2 {
     background: #17baaa;
     color: #fff;
     font-size: .875rem;
@@ -70,7 +70,7 @@ body {
     cursor: pointer;
 }
 
-.header-content-btn:hover {
+.header-content-btn:hover, .header-content-btn-2:hover {
     background-color: #129185;
 }
 
@@ -91,13 +91,14 @@ th, td {
 
 th {
     background-color: #17baaa;
-    color: white;
+    color: #ffffff;
     font-size: 24px;
 }
 
 td {
-    background-color: #fff;
+    background-color: #ffffff;
     font-size: 18px;
+    color: #000000;
 }
 
 .char {
@@ -108,6 +109,7 @@ td {
 
 p {
     margin: 10px 0 0 0;
+    color: #000000;
 }
 
 /* Media Section */

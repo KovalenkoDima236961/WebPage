@@ -31,29 +31,29 @@
             <tr>
                 <th>
                     <h1 class="char"><?php echo $lang['characteristics'] ?></h1>
-                    <p><?php echo $lang['charac1'] ?></p>
+                    <p style="color: black"><?php echo $lang['charac1'] ?></p>
                 </th>
                 <th>
                     <h2 class="char"><?php echo $lang['screen'] ?></h2>
-                    <p><?php echo $lang['charac2'] ?></p>
+                    <p style="color: black"><?php echo $lang['charac2'] ?></p>
                 </th>
                 <th>
                     <h2 class="char"><?php echo $lang['camera'] ?></h2>
-                    <p><?php echo $lang['charac3'] ?></p>
+                    <p style="color: black"><?php echo $lang['charac3'] ?></p>
                 </th>
             </tr>
             <tr>
                 <td>
                     <h2 class="char"><?php echo $lang['power'] ?></h2>
-                    <p><?php echo $lang['charac4']?></p>
+                    <p style="color: black"><?php echo $lang['charac4']?></p>
                 </td>
                 <td>
                     <h2 class="char"><?php echo $lang['memory'] ?></h2>
-                    <p><?php echo $lang['charac5'] ?></p>
+                    <p style="color: black"><?php echo $lang['charac5'] ?></p>
                 </td>
                 <td>
                     <h2 class="char"><?php echo $lang['selfie'] ?></h2>
-                    <p><?php echo $lang['charac6'] ?></p>
+                    <p style="color: black"><?php echo $lang['charac6'] ?></p>
                 </td>
             </tr>
         </table>

@@ -38,6 +38,18 @@
             <li>
                 <a class="theme-toggle" id="theme-toggle"><?php echo $theme === 'dark' ? 'Light' : 'Dark'; ?></a>
             </li>
+            <?php if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) { ?>
+                <li>
+                    <a class="nav-list-link" href="/myWebPage/login.php">login</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="/myWebPage/registration.php">register</a>
+                </li>
+            <?php } else { ?>
+                <li>
+                    <a class="nav-list-link" href="/myWebPage/logout.php">logout</a>
+                </li>
+            <?php } ?>
         </ul>
     </nav>
     </header>

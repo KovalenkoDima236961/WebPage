@@ -16,9 +16,9 @@
     <div class="header-content">
         <h1 class="header-content-title">Apple Iphone Xr 128 GB </h1>
     </div>
-    <section class="section">
+    <section class="section" style="background-color: pink">
         <div class="photo-phone">
-            <img class="photo" src="img/Photo-1.jpg" alt="mobil">
+            <img class="photo" src="/img/Photo-1.jpg" alt="mobil">
             <div class="price">
                 <h4 class="price-color"><?php echo $lang['price'] ?></h4>
             </div>

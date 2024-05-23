@@ -50,13 +50,11 @@
 /* Parallax Section */
 .parallax {
     position: relative;
-    background: url('/img/Photo-4.jpg') no-repeat center center;
     background-size: cover;
     height: 500px; /* Adjust height as needed */
     /*margin: 20px 0;*/
-    background-attachment: fixed; /* Fixed background for parallax effect */
-    background-position: center;
-    background-repeat: no-repeat;
+    /* Fixed background for parallax effect */
+    background: url('/img/Photo-4.jpg') no-repeat fixed center;
     background-size: cover;
     display: flex;
     justify-content: center;

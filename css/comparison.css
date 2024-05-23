@@ -1,148 +1,176 @@
 body {
     margin: 0;
 }
+
+/* Main Content */
 .header-content {
     display: flex;
+    text-align: center;
+    margin-top: 0;
+    height: 200px;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #000;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    justify-content: center;
 }
 
 .header-content-title {
-    font-size: 50px;
+    font-size: 40px;
+    margin-top: 5%;
     color: #17baaa;
-    margin-bottom: 20px;
-}
-
-.header-content-subtitle {
-    font-size: 24px;
-    color: #aaa;
-    margin-bottom: 40px;
-}
-
-.buttom {
-    display: flex;
-    gap: 20px;
-}
-
-.header-content-btn {
-    background: #007aff;
-    color: #fff;
-    font-size: 1rem;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 22px;
-    box-sizing: border-box;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: background 0.3s, transform 0.3s;
-    cursor: pointer;
-}
-
-.header-content-btn:hover {
-    background-color: #005bb5;
-    transform: scale(1.05);
 }
 
 .section {
-    padding: 60px 20px;
-    background-color: #000;
-}
-
-.photo-phone, .photo-phone-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+}
+
+.photo-comparison {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.photo-phone {
     text-align: center;
-    margin: 20px 0;
 }
 
 .photo {
     width: 300px;
     height: auto;
-    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.price, .price-2 {
-    margin-top: 20px;
+.price {
+    margin-bottom: 10px;
 }
 
-.price-color, .price-color-2 {
-    color: #17baaa;
+.price-color {
     font-size: 24px;
+    color: #17baaa;
 }
 
-.buttom-2 {
+.price-color-2 {
+    font-size: 24px;
+    color: #17baaa;
+}
+
+.buttom {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.header-content-btn-2 {
-    background: #ff5722;
+.header-content-btn {
+    background: #17baaa;
     color: #fff;
-    font-size: 1rem;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 22px;
+    font-size: .875rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
     box-sizing: border-box;
     font-weight: 700;
     text-transform: uppercase;
-    transition: background 0.3s, transform 0.3s;
+    text-align: center;
+    transition: all .25s ease;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.header-content-btn-2:hover {
-    background-color: #e64a19;
-    transform: scale(1.05);
+.header-content-btn:hover {
+    background-color: #129185;
 }
 
+/* Table Styles */
 table {
     width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 1000px;
+    margin: 0 auto;
     border-collapse: collapse;
-    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-    padding: 15px;
+    padding: 20px;
     text-align: left;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #ddd;
 }
 
-th h1, th h2, th h3 {
+th {
+    background-color: #17baaa;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+td {
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #000000;
+}
+
+.char {
     margin: 0;
+    font-size: 20px;
     color: #17baaa;
 }
 
-th p, td p {
-    color: #aaa;
+p {
+    margin: 10px 0 0 0;
+    color: #000000;
 }
-/* Responsive Styles */
+
+/* Media Section */
+.media-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+audio {
+    display: block;
+    margin: 10px auto;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    margin: 20px auto;
+}
+
 @media screen and (max-width: 960px) {
-    .header-content-title {
-        font-size: 35px;
+    .header-content {
+        height: 100px;
+        text-align: center;
     }
 
-    .header-content-subtitle {
-        font-size: 20px;
+    .header-content-title {
+        font-size: 26px;
+    }
+
+    .photo-phone {
+        width: 90%;
     }
 
     .photo {
-        max-height: 100%;
-        margin-top: 0;
+        width: 100%;
     }
 
-    .section {
-        width: 90%;
+    table, th, td {
+        font-size: 16px;
+        padding: 10px;
     }
 
-    .photo-phone, .photo-phone-2 {
-        width: 90%;
+    .header-content-btn {
+        padding: 10px;
+    }
+
+    .video {
+        width: 315px;
+        height: 177px;
     }
 }
