@@ -36,7 +36,7 @@
 
 <?php
 
-global $pdo;
+require "configuration/setup.php";
 
 if(isset($_POST['submit'])){
     if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm_password'])){
@@ -67,8 +67,5 @@ if(isset($_POST['submit'])){
         echo "All fields are required";
     }
 }
-
-// Close the database connection
-$pdo = null;
 
 ?>

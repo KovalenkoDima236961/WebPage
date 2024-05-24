@@ -34,7 +34,7 @@
 
 
 <?php
-    global $pdo;
+    require "configuration/setup.php";
     if (isset($_POST["submit"])) {
         if (isset($_POST['username']) && isset($_POST['password'])) {
             $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -60,6 +60,4 @@
         }
     }
 
-// Close the database connection
-$pdo = null;
 ?>
