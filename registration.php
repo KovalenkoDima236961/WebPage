@@ -56,7 +56,9 @@ if(isset($_POST['submit'])){
             $query->bindParam(':password', $hash);
 
             if($query->execute()){
+                $user = new User($username,$password);
                 $_SESSION['loggedIn'] = true;
+                $_SESSION['user'] = $user;
                 header("Location: mainPage.php");
                 exit(); // Ensure no further code is executed
             } else {

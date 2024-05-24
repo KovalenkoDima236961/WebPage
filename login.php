@@ -48,8 +48,9 @@
             $user = $query->fetch(PDO::FETCH_ASSOC);
 
             if ($user && password_verify($password, $user['password'])) {
+                $user_current = new User($username,$password);
                 $_SESSION['loggedIn'] = true;
-                $_SESSION['username'] = $user['username'];
+                $_SESSION['user'] = $user_current;
                 header("Location: mainPage.php");
                 exit();
             } else {

@@ -118,7 +118,12 @@ if (isset($_POST['post_comment'])) {
     <section class="section-2">
         <div class="wrapper">
             <form action="" method = "post" class="form">
-                <input type="text" class="name" name="name" placeholder="Name">
+                <input type="text" class="name" name="name" placeholder="<?php
+                if(isset($_SESSION['user'])) {
+                    echo $_SESSION['user']->getUsername();
+                } else {
+                    echo 'Enter name';
+                } ?>">
                 <br>
                 <textarea name="message" cols="30" rows="10" class="message" placeholder="Message"></textarea>
                 <br>
