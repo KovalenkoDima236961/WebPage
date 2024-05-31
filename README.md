@@ -17,4 +17,5 @@
         <li><strong>Change Page Language:</strong> The web page supports multiple languages, allowing users to switch between different languages for a personalized experience.</li>
         <li><strong>Light and Dark Themes:</strong> Users can toggle between light and dark themes to suit their viewing preferences.</li>
         <li><strong>Dynamic Gallery:</strong> A dynamic gallery showcases the phones with high-quality images, offering a visually appealing browsing experience.</li>
+        <li><strong>Registration/Login</li>
 </ul>
