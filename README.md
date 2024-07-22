@@ -1,6 +1,3 @@
-<h1>University Project on Phone Selling Web Page</h1>
-<p>Welcome to the documentation for my university project, which aimed at creating a web page for selling phones. This project leverages a range of technologies including PHP, HTML5, CSS, JavaScript, and PostgreSQL to provide a comprehensive and interactive user experience.</p>
-
 <h2>Project Overview</h2>
 <p>The main goal of this project was to develop a fully functional webpage where users can review the phone (its characteristics, how it records video, takes photos, and compares it to another phone). And read or write a review themselves</p>
 
